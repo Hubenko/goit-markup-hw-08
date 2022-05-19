@@ -1,19 +1,23 @@
-/* Основной цвет текста  #212121 */
-/* Вторичный цвет текста #757575 */
-/* белый background: #FFFFFF;*/
-/* Акцент #2196F3 */
-
-.list {
-  list-style: none;
+:root {
+  --primary-text-color: #212121;
+  --titel-text-color: #757575;
+  --accent-color: #2196f3;
+  --wight-color: #ffffff;
 }
 
+ul {
+  list-style: none;
+}
+.list {
+  text-decoration: none;
+}
 .page {
-  color: #212121;
+  color: var(--primary-text-color);
   background-color: #e5e5e5;
 }
 /* Logo */
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
 }
 .logo-name {
@@ -21,17 +25,45 @@
 }
 /* Navi */
 .site-nav a {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .site-nav a:hover,
 .site-nav a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.site-nav .list.current {
+  color: var(--accent-color);
+}
+/* Contacts */
+.contacts-list .list {
+  color: var(--titel-text-color);
+}
+.contacts-list .list:hover {
+  color: var(--accent-color);
 }
 /* Hero */
+.hero {
+  background-color: #2f303a;
+}
 .hero-titel {
-  color: #ffffff;
+  color: var(--wight-color);
 }
 /* Section-titel */
 .section-titel {
-  color: #212121;
+  color: var(--primary-text-color);
+}
+/* Benefits-list */
+.benefits {
+  color: var(--titel-text-color);
+}
+.name {
+  color: var(--primary-text-color);
+}
+.position {
+  color: var(--titel-text-color);
+}
+
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
