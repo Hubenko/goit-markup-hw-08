@@ -3,6 +3,9 @@
   --titel-text-color: #757575;
   --accent-color: #2196f3;
   --wight-color: #ffffff;
+  --background-color: #f5f4fa;
+  --hover-button: #188ce8;
+  --cards-portfolio: #eeeeee;
 }
 
 ul {
@@ -14,11 +17,21 @@ ul {
 .page {
   color: var(--primary-text-color);
   background-color: #e5e5e5;
+  font-family: Roboto, sans-serif;
+}
+.page-header {
+  background-color: var(--wight-color);
 }
 /* Logo */
 .logo {
   color: var(--accent-color);
   text-decoration: none;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .logo-name {
   color: #000000;
@@ -26,6 +39,11 @@ ul {
 /* Navi */
 .site-nav a {
   color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -37,6 +55,11 @@ ul {
 /* Contacts */
 .contacts-list .list {
   color: var(--titel-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .contacts-list .list:hover {
   color: var(--accent-color);
@@ -47,23 +70,130 @@ ul {
 }
 .hero-titel {
   color: var(--wight-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 /* Section-titel */
 .section-titel {
   color: var(--primary-text-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /* Benefits-list */
+.benefits-titel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 .benefits {
   color: var(--titel-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/* Наша команда */
+.section-team {
+  background-color: #f5f4fa;
 }
 .name {
   color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .position {
   color: var(--titel-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
 }
 
 .button {
   color: #ffffff;
   background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+  color: #188ce8;
+}
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  color: var(--wight-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-name-footer {
+  color: var(--wight-color);
+}
+.portfolio-filter {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+.portfolio-filter:hover {
+  color: var(--hover-button);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--hover-button);
+}
+
+.card-type {
+  background-color: var(--cards-portfolio);
+}
+.card-titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.card-type p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--titel-text-color);
 }
