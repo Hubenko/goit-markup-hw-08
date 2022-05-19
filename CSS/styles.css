@@ -141,7 +141,7 @@ ul {
 }
 .button:hover,
 .button:focus {
-  color: #188ce8;
+  color: var(--accent-color);
 }
 .footer {
   background-color: #2f303a;
@@ -176,7 +176,7 @@ ul {
 
 .button-filter:hover,
 .button-filter:focus {
-  color: var(--hover-button);
+  background-color: var(--hover-button);
 }
 
 .card-type {
