@@ -51,7 +51,7 @@ ul {
 }
 /* Contacts */
 .contacts-list .list {
-  color: var(--titel-text-color);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -109,7 +109,6 @@ ul {
 }
 .position {
   color: var(--titel-text-color);
-  font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
@@ -132,16 +131,9 @@ ul {
   background-color: #2f303a;
 }
 address {
-  color: var(--wight-color);
-  font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  text-decoration: none;
   font-style: normal;
 }
 .address {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -156,21 +148,21 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--background-color);
 }
-/* .portfolio-filter:hover { */
-/* color: var(--hover-button); */
-/* } */
-
 .button-filter:hover,
 .button-filter:focus {
   background-color: var(--hover-button);
+  color: var(--wight-color);
 }
 .button-filter {
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
   font-family: inherit;
 }
 
@@ -186,7 +178,6 @@ address {
 }
 
 .card-type p {
-  font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
