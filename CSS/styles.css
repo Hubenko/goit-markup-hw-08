@@ -76,7 +76,6 @@ ul {
 /* Section-titel */
 .section-titel {
   color: var(--primary-text-color);
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
