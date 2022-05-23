@@ -9,12 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body class="page">
     <!--Шапка-->
     <header class="page-header">
-      <nav>
+      <nav class="container">
         <a href="./index.html" class="logo">Web<span class="logo-name">Studio</span></a>
         <ul class="site-nav">
           <li><a href="./index.html" class="list current">Студия</a></li>
@@ -22,10 +26,12 @@
           <li><a href="" class="list">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="contacts-list">
-        <li><a href="mailto:info@dewstudio.com" class="list">info@dewstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="list">+38 096 111 11 11</a></li>
-      </ul>
+      <div class="container">
+        <ul class="contacts-list">
+          <li><a href="mailto:info@dewstudio.com" class="list-header">info@dewstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="list-header">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
     <!--Основной контент-->
     <main>
@@ -35,6 +41,7 @@
       </section>
       <!-- Принципы работы -->
       <section class="section">
+        <div class="container">
         <h2 class="section-titel">Наши приимущества</h2>
         <ul class="benefits-list">
           <li>
@@ -62,11 +69,13 @@
             </p>
           </li>
         </ul>
+        </dav>
       </section>
       <!-- Чем мы занимаемся -->
       <section class="section">
+        <div class="container">
         <h2 class="section-titel">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="examples">
           <li>
             <img src="./images/box-1.jpg" alt="Box 1" width="370" />
           </li>
@@ -77,9 +86,11 @@
             <img src="./images/box-3.jpg" alt="Box 3" width="370" />
           </li>
         </ul>
+        </div>
       </section>
       <!-- Наша команда -->
       <section class="section-team">
+        <div class="container">
         <h2 class="section-titel">Наша команда</h2>
         <ul class="team">
           <li>
@@ -103,10 +114,12 @@
             <p class="position">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Подвал-->
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="logo">Web<span class="logo-name-footer">Studio</span></a>
       <address>
         <ul class="contacts-list">
@@ -123,6 +136,7 @@
           <li><a href="tel:+380961111111" class="list">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
