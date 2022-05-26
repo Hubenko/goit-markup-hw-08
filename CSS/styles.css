@@ -129,7 +129,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 /* Benefits-list */
@@ -182,6 +182,9 @@ ul {
 }
 .team .team-item:not(:last-child) {
   margin-right: 30px;
+}
+.team-item {
+  text-align: center;
 }
 .name {
   color: var(--primary-text-color);
@@ -294,6 +297,10 @@ address {
   color: var(--primary-text-color);
   margin-top: 20px;
   margin-bottom: 4px;
+  padding-left: 24px;
+}
+.card-direction {
+  padding-left: 24px;
 }
 
 .card-type p {
