@@ -32,10 +32,10 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .logo-name {
   color: #000000;
-  margin-right: 93px;
 }
 /* Navi */
 .site-nav a {
@@ -79,8 +79,6 @@ ul {
   padding: 0;
   display: flex;
   align-items: center;
-}
-.contacts {
   margin-left: auto;
 }
 
@@ -114,7 +112,7 @@ ul {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: tomato;
+  /* background-color: tomato; */
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -130,6 +128,19 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Benefits-list */
@@ -192,16 +203,23 @@ ul {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  margin: 0;
+  /* margin-top: 30px;
   margin-bottom: 10px;
-  padding: 0;
+  padding: 0; */
 }
 .position {
   color: var(--titel-text-color);
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.name-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .button {
@@ -247,7 +265,8 @@ address {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .logo-name-footer {
@@ -295,20 +314,32 @@ address {
   line-height: 1.6;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
+  margin: 0 0 4px 0;
+
+  /* margin-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
+  padding-left: 24px; */
 }
 .card-direction {
+  margin: 0;
+  /* padding-left: 24px; */
+}
+
+.card-titel-direct {
+  padding-top: 20px;
   padding-left: 24px;
+  padding-bottom: 20px;
+  border-right: 1px solid#EEEEEE;
+  border-bottom: 1px solid#EEEEEE;
+  border-left: 1px solid#EEEEEE;
 }
 
 .card-type p {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
-  margin-top: 0;
-  margin-bottom: 20px;
+  /* margin-top: 0;
+  margin-bottom: 20px; */
 }
 
 /* Отступы 1-я страница */
@@ -318,7 +349,7 @@ address {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: red; */
 }
 
 .section {
@@ -383,11 +414,11 @@ address {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background-color: teal;
+  /* background-color: teal; */
 }
 .card-type {
   width: ((100%-60px) / 3);
-  background-color: tomato;
+  /* background-color: tomato; */
   margin-right: 30px;
   margin-bottom: 30px;
 }
