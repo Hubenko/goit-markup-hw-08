@@ -474,6 +474,7 @@ address {
 
 .contacts-networks {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-contacts {
