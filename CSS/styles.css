@@ -640,7 +640,7 @@ address {
   fill: currentColor;
 }
 
-.network-titel {
+.network-titel-footer {
   display: flex;
   margin: 0;
   width: 44px;
@@ -648,14 +648,20 @@ address {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  color: #757575;
+  color: var(--wight-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.network-titel:hover {
+.network-titel-footer:hover {
   background-color: #2196f3;
-  color: var(--wight-color);
 }
 
 .network:not(:last-child) {
   margin-right: 10px;
+}
+
+.networks-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
 }
