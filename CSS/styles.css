@@ -73,7 +73,8 @@ ul {
   text-decoration: none;
 }
 
-.contacts-list .list-header:hover {
+.contacts-list .list-header:hover,
+.contacts-list .list-header:focus {
   color: var(--accent-color);
 }
 .contacts-list {
@@ -133,14 +134,14 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)),
     url('../images/hero.jpg');
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -269,6 +270,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 .name {
   color: var(--primary-text-color);
@@ -277,17 +279,12 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin: 0;
-  /* margin-top: 30px;
-  margin-bottom: 10px;
-  padding: 0; */
 }
 .position {
   color: var(--titel-text-color);
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin: 0;
-  /* margin: 0;
-  padding: 0; */
 }
 
 .name-position {
@@ -298,7 +295,7 @@ ul {
 .list-network {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 16px;
   padding: 0;
 }
@@ -320,7 +317,8 @@ ul {
   color: #757575;
 }
 
-.network-titel:hover {
+.network-titel:hover,
+.network-titel:focus {
   background-color: #2196f3;
   color: var(--wight-color);
 }
@@ -365,6 +363,12 @@ address {
 }
 
 /* партнеры */
+.section-partners {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .partners-list {
   margin: 0;
   padding: 0;
@@ -377,15 +381,15 @@ address {
   display: flex;
   align-self: center;
   justify-content: center;
-  padding: 16px 32px;
+  align-items: center;
   color: #afb1b8;
+  width: 100%;
+  height: 100%;
 }
 
-.partners-link:hover {
+.partners-link:hover,
+.partners-link:focus {
   color: #2196f3;
-}
-.partner:hover {
-  border: solid #2196f3;
 }
 
 .partners {
@@ -398,8 +402,6 @@ address {
   color: #afb1b8;
   align-self: center;
   justify-content: center;
-}
-.partners:hover {
 }
 
 .partners-icon {
@@ -414,12 +416,13 @@ address {
   margin-right: 30px;
 }
 
-.partners-block {
+/* .partners-block {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
-.partners:hover {
+.partners:hover,
+.partners:focus {
   border: 1px solid #2196f3;
 }
 
@@ -447,7 +450,8 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.contacts-list-footer .list:hover {
+.contacts-list-footer .list:hover,
+.contacts-list-footer .list:focus {
   color: var(--accent-color);
 }
 
@@ -469,7 +473,7 @@ address {
 }
 
 .networks-footer {
-  max-width: 0;
+  margin: 0;
   padding: 0;
   display: flex;
 }
@@ -514,14 +518,9 @@ address {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin: 0 0 4px 0;
-
-  /* margin-top: 20px;
-  margin-bottom: 4px;
-  padding-left: 24px; */
 }
 .card-direction {
   margin: 0;
-  /* padding-left: 24px; */
 }
 
 .card-titel-direct {
@@ -541,7 +540,8 @@ address {
   margin-bottom: 20px; */
 }
 
-.card-type:hover {
+.card-type:hover,
+.card-type:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -622,9 +622,9 @@ address {
 }
 .card-type {
   width: ((100%-60px) / 3);
-  /* background-color: tomato; */
   margin-right: 30px;
   margin-bottom: 30px;
+  /* display: block; */
 }
 
 .card-type:nth-child(3n) {
@@ -660,7 +660,8 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.network-titel-footer:hover {
+.network-titel-footer:hover,
+.network-titel-footer:focus {
   background-color: #2196f3;
 }
 
@@ -670,6 +671,6 @@ address {
 
 .networks-header {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
 }
