@@ -90,7 +90,7 @@ ul {
 
 .main-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .nav {
