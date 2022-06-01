@@ -72,6 +72,7 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .contacts-list .list-header:hover {
   color: var(--accent-color);
 }
@@ -81,6 +82,10 @@ ul {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+.site-item {
+  display: flex;
+  align-items: center;
 }
 
 .main-container {
@@ -95,6 +100,32 @@ ul {
 .contacts-list .site-item:not(:last-child) {
   margin-right: 50px;
 }
+.list-header {
+  display: flex;
+  align-items: center;
+  color: #757575;
+}
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: #2196f3;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: #2196f3;
+}
 
 /* Hero */
 .hero {
@@ -102,7 +133,17 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
+
 .hero-titel {
   color: var(--wight-color);
   font-weight: 900;
@@ -120,6 +161,7 @@ ul {
 
   /* Section-titel */
 }
+
 .section-titel {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -173,6 +215,33 @@ ul {
 .benefits-list > .benefits-item {
   width: 270px;
 }
+
+.benefits-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-image: url(../images/antenna.svg);
+}
+
+.details::before {
+  background-image: url(../images/antenna.svg);
+}
+.punctuality::before {
+  background-image: url(../images/clock.svg);
+}
+
+.planning::before {
+  background-image: url(../images/diagram.svg);
+}
+.technology::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 /* Чем мы занимаемся */
 .examples {
   margin: 0;
@@ -197,6 +266,9 @@ ul {
 }
 .team-item {
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .name {
   color: var(--primary-text-color);
@@ -223,6 +295,43 @@ ul {
   padding-bottom: 30px;
 }
 
+.list-network {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.network-name {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* .network-name:hover {
+  fill: var(--wight-color);
+} */
+.network-titel {
+  display: flex;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #757575;
+}
+
+.network-titel:hover {
+  background-color: #2196f3;
+  color: var(--wight-color);
+}
+
+.network:not(:last-child) {
+  margin-right: 10px;
+}
+
 .button {
   color: #ffffff;
   background-color: var(--accent-color);
@@ -232,6 +341,7 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: inherit;
+  border: 0;
   border-radius: 4px;
   padding: 10px 32px;
   display: inline-block;
@@ -257,7 +367,67 @@ address {
   text-decoration: none;
 }
 
+/* партнеры */
+.partners-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-link {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 16px 32px;
+  color: #afb1b8;
+}
+
+.partners-link:hover {
+  color: #2196f3;
+}
+.partner:hover {
+  border: solid #2196f3;
+}
+
+.partners {
+  width: 170px;
+  height: 92px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  align-self: center;
+  justify-content: center;
+}
+.partners:hover {
+}
+
+.partners-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners:not(:last-child) {
+  margin-right: 30px;
+}
+
+.partners-block {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.partners:hover {
+  border: 1px solid #2196f3;
+}
+
 /* подвал */
+
 .logo-footer {
   color: var(--accent-color);
   text-decoration: none;
@@ -298,6 +468,17 @@ address {
   background-color: var(--hover-button);
   color: var(--wight-color);
 }
+
+.networks-footer {
+  max-width: 0;
+  padding: 0;
+  display: flex;
+}
+
+.contacts-networks {
+  display: flex;
+}
+
 .button-filter {
   cursor: pointer;
   font-weight: 500;
