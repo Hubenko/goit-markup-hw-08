@@ -637,7 +637,7 @@ address {
 .list-network {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 16px;
   padding: 0;
 }
