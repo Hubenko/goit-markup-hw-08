@@ -535,7 +535,7 @@ address {
 .card-type p {
   line-height: 1.9;
   letter-spacing: 0.03em;
-  color: var(--titel-text-color);
+  /* color: var(--titel-text-color); */
   /* margin-top: 0;
   margin-bottom: 20px; */
 }
@@ -626,6 +626,36 @@ address {
   padding: 0;
   /* background-color: teal; */
 }
+.poster {
+  position: relative;
+  overflow: hidden;
+}
+.inform-app {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 63px 24px;
+}
+
+.poster:hover .inform-app {
+  transform: translateY(0%);
+}
+
 .card-type {
   width: ((100%-60px) / 3);
   margin-right: 30px;
@@ -743,6 +773,9 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close {
@@ -754,4 +787,10 @@ address {
   height: 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.button-close {
+  width: 11px;
+  height: 11px;
 }
