@@ -107,8 +107,8 @@ ul {
   color: #757575;
 }
 .icon-envelope {
-  width: 16px;
-  height: 12px;
+  width: 23px;
+  height: 19px;
   fill: currentColor;
   margin-right: 10px;
 }
@@ -118,8 +118,8 @@ ul {
 }
 
 .icon-phone {
-  width: 10px;
-  height: 16px;
+  width: 17px;
+  height: 23px;
   fill: currentColor;
   margin-right: 10px;
 }
@@ -643,7 +643,7 @@ address {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms ease;
+  transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
@@ -653,6 +653,10 @@ address {
 }
 
 .poster:hover .inform-app {
+  transform: translateY(0%);
+}
+
+.poster:focus .inform-app {
   transform: translateY(0%);
 }
 
@@ -731,7 +735,8 @@ address {
   color: #ffffff;
   transform: translateX(-100%);
   background: rgba(47, 48, 58, 0.8);
-  transition: transform 500ms ease;
+  transition: transform 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-item:hover .app {
