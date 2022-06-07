@@ -45,6 +45,8 @@ ul {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav {
   margin: 0;
@@ -105,6 +107,8 @@ ul {
   display: flex;
   align-items: center;
   color: #757575;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-envelope {
   width: 23px;
@@ -315,12 +319,17 @@ ul {
   align-items: center;
   justify-content: center;
   color: #757575;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .network-titel:hover,
 .network-titel:focus {
   background-color: #2196f3;
   color: var(--wight-color);
+  transition: color 250ms;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .network:not(:last-child) {
@@ -390,6 +399,8 @@ address {
 .partners-link:hover,
 .partners-link:focus {
   color: #2196f3;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners {
@@ -424,6 +435,8 @@ address {
 .partners:hover,
 .partners:focus {
   border: 1px solid #2196f3;
+  transition: border 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* подвал */
@@ -449,10 +462,14 @@ address {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-footer .list:hover,
 .contacts-list-footer .list:focus {
   color: var(--accent-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list-footer {
@@ -470,6 +487,9 @@ address {
   color: var(--wight-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .networks-footer {
@@ -498,8 +518,9 @@ address {
   background-color: var(--background-color);
   border: #ffffff;
   border-radius: 4px;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .networks-header {
   color: #ffffff;
   font-style: normal;
@@ -521,6 +542,7 @@ address {
 }
 .card-direction {
   margin: 0;
+  color: #757575;
 }
 
 .card-titel-direct {
@@ -540,17 +562,11 @@ address {
   margin-bottom: 20px; */
 }
 
-.card-type:hover,
-.card-type:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-/* .poster:hover,
+.poster:hover,
 .poster:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
+}
 
 /* Отступы 1-я страница */
 .container {
@@ -629,6 +645,7 @@ address {
 .poster {
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 .inform-app {
   position: absolute;
@@ -640,8 +657,8 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(33, 150, 243, 0.9);
-  width: 100%;
-  height: 100%;
+  width: 370px;
+  height: 294px;
   transform: translateY(100%);
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -654,10 +671,14 @@ address {
 
 .poster:hover .inform-app {
   transform: translateY(0%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poster:focus .inform-app {
   transform: translateY(0%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-type {
@@ -698,11 +719,15 @@ address {
   justify-content: center;
   color: var(--wight-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .network-titel-footer:hover,
 .network-titel-footer:focus {
   background-color: #2196f3;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .network:not(:last-child) {
@@ -765,6 +790,10 @@ address {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+  transition: opacity 250ms;
+  transition: visibiliry 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
