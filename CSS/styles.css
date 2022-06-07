@@ -415,7 +415,7 @@ address {
   color: #afb1b8;
   align-self: center;
   justify-content: center;
-  transition: border 250ms;
+  transition: border 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -487,12 +487,24 @@ address {
   color: var(--wight-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  /* transition: background-color 2250ms; */
-  transition: box-shadow 2250ms;
-  transition: color 2250ms;
-  transition: background-color 2250ms;
+  /* transition: background-color 2250ms;
+  /* transition: box-shadow 2250ms; */
+  /* transition: background-color 7250ms; */
 }
 
+.button-filter {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  background-color: #f5f4fa;
+  border: #ffffff;
+  border-radius: 4px;
+  transition: background-color 2250ms, color 2250ms, box-shadow 2250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .networks-footer {
   margin: 0;
   padding: 0;
@@ -509,20 +521,6 @@ address {
   margin-right: 70px;
 }
 
-.button-filter {
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  font-family: inherit;
-  background-color: #f5f4fa;
-  border: #ffffff;
-  border-radius: 4px;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2250ms;
-  transition: background-color 2250ms;
-}
 .networks-header {
   color: #ffffff;
   font-style: normal;
