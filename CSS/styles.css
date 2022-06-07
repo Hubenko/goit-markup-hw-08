@@ -730,8 +730,6 @@ address {
 .network-titel-footer:hover,
 .network-titel-footer:focus {
   background-color: #2196f3;
-  transition: background-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .network:not(:last-child) {
@@ -814,6 +812,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close {
