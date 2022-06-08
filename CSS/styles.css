@@ -163,7 +163,6 @@ ul {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 0px;
-  /* background-color: tomato; */
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -323,9 +322,8 @@ ul {
   align-items: center;
   justify-content: center;
   color: #757575;
-  transition: color 250ms;
+  transition: background-color 250ms, color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms;
 }
 
 .network-titel:hover,
@@ -396,13 +394,16 @@ address {
   color: #afb1b8;
   width: 100%;
   height: 100%;
-  transition: color 250ms;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: color 2250ms, border 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-link:hover,
 .partners-link:focus {
   color: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .partners {
@@ -410,13 +411,6 @@ address {
   height: 92px;
   padding: 0;
   margin: 0;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  color: #afb1b8;
-  align-self: center;
-  justify-content: center;
-  transition: border 2250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-icon {
@@ -429,16 +423,6 @@ address {
 
 .partners:not(:last-child) {
   margin-right: 30px;
-}
-
-/* .partners-block {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
-
-.partners:hover,
-.partners:focus {
-  border: 1px solid #2196f3;
 }
 
 /* подвал */
@@ -487,9 +471,6 @@ address {
   color: var(--wight-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  /* transition: background-color 2250ms;
-  /* transition: box-shadow 2250ms; */
-  /* transition: background-color 7250ms; */
 }
 
 .button-filter {
@@ -557,9 +538,6 @@ address {
 .card-type p {
   line-height: 1.9;
   letter-spacing: 0.03em;
-  /* color: var(--titel-text-color); */
-  /* margin-top: 0;
-  margin-bottom: 20px; */
 }
 .poster {
   text-decoration: none;
@@ -579,7 +557,6 @@ address {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: red; */
 }
 
 .section {
@@ -770,11 +747,6 @@ address {
 .poster {
   display: block;
 }
-/* .poster:hover,
-.poster:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
 
 /* Модальное окно */
 .backdrop {
@@ -846,9 +818,4 @@ address {
   height: 4px;
   border-radius: 4px;
   background-color: #2196f3;
-  /* opacity: 0; */
 }
-
-/* .nav-site:hover::after {
-  opacity: 1;
-} */
