@@ -400,46 +400,44 @@
                 </ul>
               </div>
               <div class="subscription">
-      
-      
-                <form action="">
-                  <div class="subscription-list"> 
-                    <div class="subscription-mail">
-                    <label for="mail" class="networks-header">Подпишитесь на рассылку</label>
-                    <input type="email" name="mail" id="mail">
-                    </div>
-                    <div class="subscription-button">
-                    <button type="submit" class="subscription-button-footer">Подписаться</button>
-                    </div>
-                  </div>
-      </form>
-      </div>
-    
-    
-    </div>
-
-      </div>
-      
-    
-  </footer>
-    <div class="backdrop is-hidden" data-modal>
+                    <p class="networks-header">Подпишись на рассылку</p>
+                    <form action="" class="subscription-mail">
+                    <label for="mail"><input type="email" name="mail" id="mail" placeholder="E-mail"></label>
+                    <button type="submit" class="subscription-button">Подписаться <svg class="icon-button"><use href="./images/symbol-defs.svg#icon-icon-send-1"></use></svg></button>
+                    </form>
+              </div>
+      </footer>
+              <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p class="networks-titel">Оставьте свои данные,мы Вам перезвоним</p>
             <button class="close" data-modal-close><svg class="button-close"><use href="./images/symbol-defs.svg#icon-Vector-1"></use></svg></button>
-            <form>
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name">
-              <br>
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel">
-              <br>
-              <label for="email">Почта</label>
-              <input type="email" name="mail" id="mail">
-              <label for="comment">Комментарий</label>
+            <p class="titel-modal">Оставьте свои данные,мы Вам перезвоним</p>
+            <form class="modal-form">
+              <div class="box-form">
+                <div class="fill-form">
+              <label for="name" class="label-name">Имя</label>
+              <input type="text" name="name" id="name" class="fill-form-name">
+              <span class="fill-form-icon"><svg><use href="./images/symbol-defs.svg#icon-person-black-18dp-1-1"></use></svg></span>
+              </div>
+              <div class="fill-form">
+              <label for="tel" class="label-name">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="fill-form-name">
+              <span class="fill-form-icon"><svg><use href="./images/symbol-defs.svg#icon-phone-black-18dp-3-1"></use></svg></span>
+              </div>
+              <div class="fill-form">
+              <label for="mail-modal" class="label-name">Почта</label>
+              <input type="email" name="mail" id="mail-modal" class="fill-form-name">
+              <span class="fill-form-icon"><svg><use href="./images/symbol-defs.svg#icon-email-black-18dp-2-1"></use></svg></span>
+              </div>
+              <div class="fill-form">
+              <label for="comment" class="label-name">Комментарий</label>
               <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-              <br>
+              </div>
+              <div class="fill-form-checkbox">
               <input type="checkbox" name="terms" id="terms">
-              <label for="terms">Соглашаюсь с условиями договора</label>
+              <label for="terms">Соглашаюсь с рассылкой и принимаю Условиями договора</label>
+              </div>
+              <button type="submit" class="send-button">Отправить</button>
+              </div>
             </form>
           </div>
         </div> 
