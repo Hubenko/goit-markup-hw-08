@@ -885,11 +885,11 @@ address {
   fill: #eeeeee;
 }
 
-.subscription-mail input::placeholder {
+/* .subscription-mail input::placeholder {
   margin-left: 16px;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 .modal-form {
   width: 448px;
@@ -925,6 +925,7 @@ address {
   padding: 0;
   padding-left: 48px;
   outline: #eeeeee;
+  transition: border-color 2500ms;
 }
 
 .fill-form textarea {
@@ -965,6 +966,7 @@ address {
   line-height: 30px;
   letter-spacing: 0.06em;
   transition: box-shadow 2500ms;
+  cursor: pointer;
 }
 
 .send-button:hover {
@@ -1007,8 +1009,16 @@ address {
   fill: #188ce8;
   cursor: pointer;
 }
-input:hover {
+input:hover,
+input:focus {
   border-color: #2196f3;
+}
+textarea {
+  outline: #eeeeee;
+}
+textarea:hover,
+textarea:focus {
+  border-color: #188ce8;
 }
 
 .fill-form-checkbox {
