@@ -783,10 +783,7 @@ address {
   box-shadow: 9px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  flex-direction: column;
+  padding: 40px;
 }
 
 .close {
@@ -846,6 +843,7 @@ address {
   display: flex;
   width: 200px;
   height: 50px;
+  align-items: center;
   margin-left: 12px;
   text-align: center;
   background: #2196f3;
@@ -859,10 +857,7 @@ address {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  padding-top: 10px;
-  padding-right: 62px;
-  padding-bottom: 10px;
-  padding-left: 29px;
+  padding: 10px 28px 10px 29px;
   cursor: pointer;
 }
 
@@ -878,21 +873,11 @@ address {
 }
 
 .icon-button {
-  position: absolute;
   width: 24px;
   height: 24px;
-  top: 13px;
-  right: 28px;
-  bottom: 13px;
-  left: 148px;
+  margin-left: 10px;
   fill: #eeeeee;
 }
-
-/* .subscription-mail input::placeholder {
-  margin-left: 16px;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
-} */
 
 .modal-form {
   width: 448px;
@@ -963,7 +948,7 @@ address {
   border-radius: 4px;
   align-self: center;
   margin-top: 30px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   color: #ffffff;
   border: #ffffff;
   font-family: 'Roboto';
@@ -986,7 +971,7 @@ address {
 
 .titel-modal {
   width: 448px;
-  margin-top: 40px;
+  margin-top: 0;
   margin-bottom: 12px;
   font-family: 'Roboto';
   font-style: normal;
@@ -1071,7 +1056,7 @@ textarea:focus {
   left: -23px;
   bottom: 4px;
   content: '';
-  display: inline-block;
+  /* display: block; */
   width: 16px;
   height: 15px;
   border: 2px solid #2a2a2a;
@@ -1081,13 +1066,15 @@ textarea:focus {
 .checkbox:checked + .checkbox-label::after {
   background-image: url('../images/iconcheck.svg');
   background-size: contain;
-  background-origin: border-box;
-  border-color: #2196f3;
+  background-position: center;
+  background-color: #188ce8;
+  background-repeat: no-repeat;
 }
 
 .checkbox:focus + .checkbox-label::after {
-  background-image: url('../images/iconcheck.svg');
   background-size: contain;
-  background-origin: border-box;
+  background-position: center;
   border-color: #2196f3;
+  align-items: center;
+  align-self: center;
 }
