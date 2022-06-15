@@ -295,27 +295,44 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Наша команда */
-.section-team {
+/*______________ Наша команда ______________*/
+
+.team {
   background-color: #f5f4fa;
   margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.team {
+.team__titel {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.team__list {
   margin: 0;
   padding: 0;
   display: flex;
 }
-.team .team-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
-.team-item {
+.team__item {
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-.name {
+.team__member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__name {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -323,33 +340,26 @@ ul {
   letter-spacing: 0.03em;
   margin: 0;
 }
-.position {
+.team__position {
   color: var(--titel-text-color);
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin: 0;
 }
 
-.name-position {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+/* ________________networks_______________ */
 
-.list-network {
+.networks {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 16px;
   padding: 0;
 }
-
-.network-name {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+.networks__item:not(:last-child) {
+  margin-right: 10px;
 }
-
-.network-titel {
+.networks__link {
   display: flex;
   margin: 0;
   width: 44px;
@@ -361,15 +371,15 @@ ul {
   transition: background-color 250ms, color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.network-titel:hover,
-.network-titel:focus {
+.networks__link:hover,
+.networks__link:focus {
   background-color: #2196f3;
   color: var(--wight-color);
 }
-
-.network:not(:last-child) {
-  margin-right: 10px;
+.networks__name {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .button {
@@ -396,7 +406,7 @@ ul {
 .footer {
   background-color: #2f303a;
 }
-address {
+.address {
   font-style: normal;
 }
 .address {
@@ -407,22 +417,39 @@ address {
   text-decoration: none;
 }
 
-/* партнеры */
-.section-partners {
+/*_______________partners_________________ */
+.partners {
   margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.partners-list {
+.partners__titel {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.partners__list {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.partners-link {
+.partners__item {
+  width: 170px;
+  height: 92px;
+  padding: 0;
+  margin: 0;
+}
+.partners__item:not(:last-child) {
+  margin-right: 30px;
+}
+.partners__link {
   display: flex;
   align-self: center;
   justify-content: center;
@@ -435,21 +462,12 @@ address {
   transition: color 2250ms, border 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.partners-link:hover,
-.partners-link:focus {
+.partners__link:hover,
+.partners__link:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
 }
-
-.partners {
-  width: 170px;
-  height: 92px;
-  padding: 0;
-  margin: 0;
-}
-
-.partners-icon {
+.partners__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
@@ -457,11 +475,7 @@ address {
   justify-content: center;
 }
 
-.partners:not(:last-child) {
-  margin-right: 30px;
-}
-
-/* подвал */
+/*____________footer___________________ */
 
 .logo-footer {
   color: var(--accent-color);
@@ -478,6 +492,7 @@ address {
 .logo-name-footer {
   color: var(--wight-color);
 }
+
 .contacts-list-footer .list {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
@@ -587,11 +602,6 @@ address {
 }
 
 /* Отступы 1-я страница */
-
-.section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .footer {
   padding-top: 60px;
