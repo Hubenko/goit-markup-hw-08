@@ -243,15 +243,58 @@ ul {
   margin: 0;
 }
 
-/* Чем мы занимаемся */
-.examples {
+/*_______________ Чем мы занимаемся _____________ */
+.activity {
+  padding-bottom: 94px;
+}
+.activity__titel {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.activity__list {
   margin: 0;
   padding: 0;
   display: flex;
 }
-.examples .examples-item:not(:last-child) {
+.activity__item:not(:last-child) {
   margin-right: 30px;
 }
+.img {
+  display: block;
+}
+.activity__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.activity__item:hover .activity__app {
+  transform: scale(1);
+}
+.activity__app {
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  transform: scale(0);
+  background: rgba(47, 48, 58, 0.8);
+  transition: transform 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Наша команда */
 .section-team {
   background-color: #f5f4fa;
@@ -549,9 +592,6 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-activity {
-  padding-bottom: 94px;
-}
 
 .footer {
   padding-top: 60px;
@@ -592,10 +632,6 @@ address {
 
 .button-filter {
   padding: 6px 22px;
-}
-
-.img {
-  display: block;
 }
 
 .card-list {
@@ -696,34 +732,6 @@ address {
   margin-top: 0;
   margin-bottom: 20px;
   padding: 0;
-}
-
-.examples-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.app {
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  bottom: 0;
-  left: 0;
-  color: #ffffff;
-  transform: scale(0);
-  background: rgba(47, 48, 58, 0.8);
-  transition: transform 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.examples-item:hover .app {
-  transform: scale(1);
 }
 
 .poster {
