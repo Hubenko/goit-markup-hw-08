@@ -322,12 +322,12 @@
     <footer class="footer">
       <div class="container contacts-networks">
         <div class="logo-contacts">
-          <a href="./index.html" class="logo-footer"
-            >Web<span class="logo-name-footer">Studio</span></a
+          <a href="./index.html" class="logo logo--margin"
+            >Web<span class="logo-name logo-name--color">Studio</span></a
           >
           <address>
-            <ul class="contacts-list-footer">
-              <li class="contacts-item">
+            <ul class="contacts--indents contacts--indents">
+              <li class="contacts__item contacts__item--margin">
                 <a
                   href="https://goo.gl/maps/g6WKa7d6enrvnRGb8"
                   target="_blank"
@@ -336,42 +336,46 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="contacts-item">
-                <a href="mailto:info@dewstudio.com" class="list">info@dewstudio.com</a>
+              <li class="contacts__item contacts__item--margin">
+                <a href="mailto:info@dewstudio.com" class="contacts__link contacts__link--text"
+                  >info@dewstudio.com</a
+                >
               </li>
-              <li class="contacts-item">
-                <a href="tel:+380961111111" class="list">+38 096 111 11 11</a>
+              <li class="contacts__item contacts__item--margin">
+                <a href="tel:+380961111111" class="contacts__link contacts__link--text"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
         <div class="network-list">
-          <p class="networks-header">Присоеденяйтесь</p>
-          <ul class="networks-footer">
-            <li class="network">
-              <a href="" class="network-titel-footer"
-                ><svg class="network-name">
+          <p class="titel">Присоеденяйтесь</p>
+          <ul class="networks networks--footer">
+            <li class="networks__item networks__item--indents">
+              <a href="" class="networks__link"
+                ><svg class="networks__name networks__name--fill">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="network">
-              <a href="" class="network-titel-footer"
-                ><svg class="network-name">
+            <li class="networks__item networks__item--indents">
+              <a href="" class="networks__link"
+                ><svg class="networks__name networks__name--fill">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="network">
-              <a href="" class="network-titel-footer"
-                ><svg class="network-name">
+            <li class="networks__item networks__item--indents">
+              <a href="" class="networks__link"
+                ><svg class="networks__name networks__name--fill">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="network">
-              <a href="" class="network-titel-footer"
-                ><svg class="network-name">
+            <li class="networks__item networks__item--indents">
+              <a href="" class="networks__link"
+                ><svg class="networks__name networks__name--fill">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -379,7 +383,7 @@
           </ul>
         </div>
         <div class="subscription">
-          <p class="networks-header">Подпишись на рассылку</p>
+          <p class="titel">Подпишись на рассылку</p>
           <form class="subscription-mail">
             <label for="mail"
               ><input type="email" name="mail" id="mail" placeholder="E-mail"
@@ -399,32 +403,32 @@
         <button class="close" data-modal-close>
           <svg class="button-close"><use href="./images/symbol-defs.svg#icon-Vector-1"></use></svg>
         </button>
-        <p class="titel-modal">Оставьте свои данные,мы Вам перезвоним</p>
-        <form class="modal-form">
-          <div class="box-form">
-            <div class="fill-form">
-              <label for="name" class="label-name">Имя</label>
-              <input type="text" name="name" id="name" class="fill-form-name" />
-              <span class="fill-form-icon"
+        <p class="modal__titel">Оставьте свои данные,мы Вам перезвоним</p>
+        <form class="form">
+          <div class="form__box">
+            <div class="form__fill">
+              <label for="name" class="form__label">Имя</label>
+              <input type="text" name="name" id="name" class="form__input" />
+              <span class="form__icon"
                 ><svg><use href="./images/symbol-defs.svg#icon-person-black-18dp-1-1"></use></svg>
               </span>
             </div>
-            <div class="fill-form">
-              <label for="tel" class="label-name">Телефон</label>
-              <input type="tel" name="tel" id="tel" class="fill-form-name" />
-              <span class="fill-form-icon"
+            <div class="form__fill">
+              <label for="tel" class="form__label">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="form__input" />
+              <span class="form__icon"
                 ><svg><use href="./images/symbol-defs.svg#icon-phone-black-18dp-3-1"></use></svg>
               </span>
             </div>
-            <div class="fill-form">
-              <label for="mail-modal" class="label-name">Почта</label>
-              <input type="email" name="mail" id="mail-modal" class="fill-form-name" />
-              <span class="fill-form-icon"
+            <div class="form__fill">
+              <label for="mail-modal" class="form__label">Почта</label>
+              <input type="email" name="mail" id="mail-modal" class="form__input" />
+              <span class="form__icon"
                 ><svg><use href="./images/symbol-defs.svg#icon-email-black-18dp-2-1"></use></svg>
               </span>
             </div>
-            <div class="fill-form comment">
-              <label for="comment" class="label-name">Комментарий</label>
+            <div class="form__fill form__fill--margin">
+              <label for="comment" class="form__label">Комментарий</label>
               <textarea
                 name="comment"
                 id="comment"
@@ -432,11 +436,11 @@
                 placeholder="Введите текст"
               ></textarea>
             </div>
-            <div class="fill-form-checkbox">
-              <input type="checkbox" name="terms" id="terms" class="checkbox" />
-              <label for="terms" class="checkbox-label"
+            <div class="checkbox">
+              <input type="checkbox" name="terms" id="terms" class="checkbox__input" />
+              <label for="terms" class="checkbox__label"
                 >Соглашаюсь с рассылкой и принимаю
-                <span><a href="" class="contract">Условиями договора</a></span></label
+                <span><a href="" class="checkbox__contract">Условиями договора</a></span></label
               >
             </div>
             <button type="submit" class="send-button">Отправить</button>
