@@ -79,13 +79,13 @@
   transition: box-shadow 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
 
-.send-button:hover,
-.send-button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 2250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 2250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal__titel {
@@ -134,10 +134,11 @@ textarea {
   outline: #eeeeee;
   transition: border-color 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-textarea:hover,
-textarea:focus {
-  border-color: #188ce8;
+
+  &:hover,
+  &:focus {
+    border-color: #188ce8;
+  }
 }
 
 .checkbox {
@@ -168,18 +169,18 @@ textarea:focus {
 
 .checkbox__label {
   position: relative;
-}
-.checkbox__label::after {
-  position: absolute;
-  align-items: center;
-  left: -23px;
-  bottom: 4px;
-  content: '';
-  /* display: block; */
-  width: 16px;
-  height: 15px;
-  border: 2px solid #2a2a2a;
-  border-radius: 2px;
+
+  &::after {
+    position: absolute;
+    align-items: center;
+    left: -23px;
+    bottom: 4px;
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid #2a2a2a;
+    border-radius: 2px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::after {

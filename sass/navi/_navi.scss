@@ -10,9 +10,10 @@
 .site-nav__item {
   display: flex;
   align-items: center;
-}
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .site-nav__link {
   color: var(--primary-text-color);
@@ -23,10 +24,11 @@
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .current {

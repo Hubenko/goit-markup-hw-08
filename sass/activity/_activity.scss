@@ -16,19 +16,19 @@
   padding: 0;
   display: flex;
 }
-.activity__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .img {
   display: block;
 }
 .activity__item {
   position: relative;
   overflow: hidden;
-}
-
-.activity__item:hover .activity__app {
-  transform: scale(1);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover .activity__app {
+    transform: scale(1);
+  }
 }
 .activity__app {
   align-items: center;
