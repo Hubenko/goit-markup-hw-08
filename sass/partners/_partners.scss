@@ -1,7 +1,7 @@
 .partners {
   margin: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .partners__titel {
   color: var(--primary-text-color);
@@ -17,18 +17,35 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
   align-items: center;
   justify-content: center;
 }
 .partners__item {
-  width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
   height: 92px;
   padding: 0;
-  margin: 0;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
   }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+  }
+  //   width: 170px;
+  //   height: 92px;
+
+  //   margin: 0;
+
+  //   &:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
 }
 .partners__link {
   display: flex;

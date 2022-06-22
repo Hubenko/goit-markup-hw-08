@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
+  margin: 0;
   padding: 0;
 
   &__item:not(:last-child) {
@@ -17,7 +17,7 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  color: #757575;
+  color: #afb1b8;
   transition: background-color 250ms, color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -27,34 +27,18 @@
     color: var(--wight-color);
   }
 }
+
 .networks__name {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.button {
-  color: #ffffff;
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  font-family: inherit;
-  border: 0;
-  border-radius: 4px;
-  padding: 10px 32px;
-  display: inline-block;
-  text-align: center;
-  margin-top: 30px;
-  padding: 10px, 32px;
 
   &:hover,
   &:focus {
-    background-color: var(--hover-button);
+    background-color: #2196f3;
   }
 }
+
 .footer {
   background-color: #2f303a;
 }
