@@ -25,19 +25,45 @@
 .contacts-networks {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-content: center;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: none;
+  @media screen and (min-width: 768px) {
+  }
 }
-
+.contacts-networks__tablet {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-bottom: 60px;
+  }
+}
 .logo-contacts {
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 232px;
+  @media screen and (min-width: 768px) {
+    width: 232px;
+    margin: 0;
+    margin-right: 165px;
+  }
 
   //   margin-right: 70px;
+}
+.network-list {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .titel {

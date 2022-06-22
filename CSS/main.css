@@ -827,23 +827,48 @@ ul {
 .contacts-networks {
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: none;
+}
+.contacts-networks__tablet {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contacts-networks__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-bottom: 60px;
+  }
 }
 
 .logo-contacts {
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 232px;
+}
+@media screen and (min-width: 768px) {
+  .logo-contacts {
+    width: 232px;
+    margin: 0;
+    margin-right: 165px;
+  }
+}
+
+.network-list {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .network-list {
+    margin: 0;
+  }
 }
 
 .titel {
@@ -953,7 +978,7 @@ ul {
 
 .subscription {
   padding: 0;
-  display: none;
+  margin: 0;
 }
 
 .subscription-button {
