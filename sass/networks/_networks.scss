@@ -52,3 +52,25 @@
   color: var(--wight-color);
   text-decoration: none;
 }
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  font-family: inherit;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px, 32px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button);
+  }
+}

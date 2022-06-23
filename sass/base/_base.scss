@@ -35,27 +35,27 @@ ul {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+
 .main-container {
   padding-top: 16px;
   padding-bottom: 16px;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 0;
     align-items: center;
   }
 }
-// .page-header {
-//   background-color: var(--wight-color);
-//   padding-top: 24px;
-//   padding-bottom: 25px;
-//   border-bottom: 1px solid#ECECEC;
-// }
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-// }
+.page-header {
+  background-color: var(--wight-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid#ECECEC;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .current {
   @media screen and (min-width: 768px) {
     position: relative;
