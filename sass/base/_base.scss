@@ -36,9 +36,14 @@ ul {
   font-family: Roboto, sans-serif;
 }
 .main-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
   }
 }
 // .page-header {
@@ -52,13 +57,13 @@ ul {
 //   padding-bottom: 60px;
 // }
 .current {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     position: relative;
   }
 }
 
 .current::after {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     content: '';
     position: absolute;
     top: 46px;

@@ -1,29 +1,28 @@
 .nav {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
 }
 .site-nav {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin: 0;
     padding: 0;
     display: flex;
   }
 }
 .site-nav__item {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-
     &:not(:last-child) {
       margin-right: 50px;
     }
   }
 }
 .site-nav__link {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -32,7 +31,6 @@
     transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
-
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -41,7 +39,7 @@
 }
 
 .current {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     color: var(--accent-color);
   }
 }

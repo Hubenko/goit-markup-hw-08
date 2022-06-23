@@ -4,6 +4,11 @@
   margin-right: auto;
   padding: 0;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 20px 0;
+
+    padding: 0;
+  }
 }
 
 .logo-name--color {
@@ -16,6 +21,10 @@
   padding: 0;
   margin-top: 20px;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    padding: 0;
+  }
 }
 .contacts__item--margin:not(:last-child) {
   margin: 0;
@@ -31,7 +40,12 @@
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  //   @media screen and (min-width: 768px) {
+  //   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
   }
 }
 .contacts-networks__tablet {
@@ -41,20 +55,28 @@
     padding-left: 76px;
     padding-right: 89px;
     margin-bottom: 60px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
   }
 }
 .logo-contacts {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 232px;
-  @media screen and (min-width: 768px) {
-    width: 232px;
-    margin: 0;
-    margin-right: 165px;
-  }
+  //   padding: 0;
+  //   margin-left: auto;
+  //   margin-right: auto;
 
-  //   margin-right: 70px;
+  //   @media screen and (min-width: 768px) {
+  //     margin: 0;
+  //   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .network-list {
   width: 206px;
@@ -83,6 +105,10 @@
   padding: 0;
   display: flex;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .networks__item--indents {
