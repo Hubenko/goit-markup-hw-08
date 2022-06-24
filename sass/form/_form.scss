@@ -1,10 +1,11 @@
-.form {
-  width: 448px;
-  height: 342px;
-}
+// .form {
+//   width: 448px;
+//   height: 342px;
+// }
 .form__box {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form__fill {
@@ -28,7 +29,8 @@
 }
 
 .form__input {
-  width: 448px;
+  width: 370px;
+  // width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -40,7 +42,8 @@
 }
 
 .form__fill textarea {
-  width: 448px;
+  width: 370px;
+  // width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -89,7 +92,8 @@
 }
 
 .modal__titel {
-  width: 448px;
+  width: 370px;
+  // width: 448px;
   margin-top: 0;
   margin-bottom: 12px;
   font-family: 'Roboto';
@@ -142,19 +146,22 @@ textarea {
 }
 
 .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  // font-size: 14px;
+  font-size: 12px;
+  // line-height: 1.7;
+  line-height: 1.2;
   color: #757575;
+  text-align: center;
 }
 
 .checkbox__label {
-  margin-left: 7px;
+  position: relative;
+  // margin-left: 7px;
+  margin-left: 8px;
 }
 
 .checkbox__contract {
@@ -168,13 +175,12 @@ textarea {
 }
 
 .checkbox__label {
-  position: relative;
-
   &::after {
     position: absolute;
     align-items: center;
-    left: -23px;
-    bottom: 4px;
+    left: -24px;
+    // left: -23px;
+    bottom: 0;
     content: '';
     width: 16px;
     height: 15px;

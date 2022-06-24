@@ -27,8 +27,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: flex;
-    align-items: center;
+
     color: #757575;
     transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,6 +39,8 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    display: flex;
+    align-items: center;
   }
 }
 .contacts__icon {

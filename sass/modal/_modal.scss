@@ -8,6 +8,8 @@
   opacity: 1;
   transition: opacity 2250ms, visibility 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -16,18 +18,20 @@
   transition: opacity 2250ms;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(0);
+// }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 2250ms, scale 2250ms, box-shadow 7250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
-  height: 581px;
+  position: relative;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%) scale(1);
+  // transition: transform 2250ms, scale 2250ms, box-shadow 7250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // width: 528px;
+  // height: 581px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 9px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
