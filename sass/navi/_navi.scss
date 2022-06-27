@@ -1,8 +1,38 @@
 .nav {
+  display: flex;
+  align-items: center;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
+}
+
+.nav__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: 278px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.nav__button .icon-cross {
+  display: none;
+}
+.nav__button.is-open .icon-cross {
+  display: block;
+}
+.nav__button.is-open .icon-menu {
+  display: none;
+}
+.nav__container {
+  // display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
 }
 .site-nav {
   display: none;

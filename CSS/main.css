@@ -54,9 +54,10 @@ ul {
 }
 
 .page-header {
+  position: relative;
   background-color: var(--wight-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -92,7 +93,12 @@ ul {
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-right: 88px;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -106,6 +112,14 @@ ul {
   color: #000000;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (min-width: 768px) {
   .nav {
     display: -webkit-box;
@@ -115,6 +129,39 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.nav__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: 278px;
+}
+@media screen and (min-width: 768px) {
+  .nav__button {
+    display: none;
+  }
+}
+
+.nav__button .icon-cross {
+  display: none;
+}
+
+.nav__button.is-open .icon-cross {
+  display: block;
+}
+
+.nav__button.is-open .icon-menu {
+  display: none;
+}
+
+.nav__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
 }
 
 .site-nav {
