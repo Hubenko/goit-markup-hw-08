@@ -128,7 +128,23 @@
           <h2 class="team__titel">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img.jpg" alt="Игорь Демьяненко" class="team__photo" />
+              <picture>
+                <source
+                  srcset="./images/team1-1x.jpg, ./images/team1-2x.jpg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/team1-1x-tab.jpg, ./images/team1-2x-tab.jpg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/team1-1x-mob.jpg, ./images/team1-2x-mob.jpg"
+                  media="(min-width: 320px)" />
+                <img
+                  src="./images/team1-1x-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450px"
+                  height="460px"
+                  class="team__photo"
+              /></picture>
               <div class="team__member">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -165,7 +181,23 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-(1).jpg" alt="Ольга Репина" class="team__photo" />
+              <picture>
+                <source
+                  srcset="./images/team1-1x.jpg, ./images/team1-2x.jpg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/team1-1x-tab.jpg, ./images/team1-2x-tab.jpg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/team1-1x-mob.jpg, ./images/team1-2x-mob.jpg"
+                  media="(min-width: 320px)" />
+                <img
+                  src="./images/team1-1x-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450px"
+                  height="460px"
+                  class="team__photo"
+              /></picture>
               <div class="team__member">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -202,7 +234,23 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-(2).jpg" alt="Николай Тарасов" class="team__photo" />
+              <picture>
+                <source
+                  srcset="./images/team1-1x.jpg, ./images/team1-2x.jpg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/team1-1x-tab.jpg, ./images/team1-2x-tab.jpg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/team1-1x-mob.jpg, ./images/team1-2x-mob.jpg"
+                  media="(min-width: 320px)" />
+                <img
+                  src="./images/team1-1x-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450px"
+                  height="460px"
+                  class="team__photo"
+              /></picture>
               <div class="team__member">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -239,7 +287,23 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-(3).jpg" alt="Михаил Ермаков" class="team__photo" />
+              <picture>
+                <source
+                  srcset="./images/team1-1x.jpg, ./images/team1-2x.jpg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/team1-1x-tab.jpg, ./images/team1-2x-tab.jpg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/team1-1x-mob.jpg, ./images/team1-2x-mob.jpg"
+                  media="(min-width: 320px)" />
+                <img
+                  src="./images/team1-1x-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450px"
+                  height="460px"
+                  class="team__photo"
+              /></picture>
               <div class="team__member">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -462,7 +526,7 @@
       </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
+      <button type="button" class="menu-toggle js-close-menu menu-toggle-margin">
         <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
           <use class="icon-menu" href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
@@ -495,7 +559,6 @@
         </ul>
       </div>
     </div>
-
     <script src="./modal.js"></script>
     <script src="./menu.js"></script>
   </body>

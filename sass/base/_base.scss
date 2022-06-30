@@ -44,6 +44,7 @@ ul {
     align-items: baseline;
     // padding: 0;
     align-items: center;
+    // margin: 0;
   }
 }
 .page-header {
@@ -52,6 +53,13 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid#ECECEC;
+  @media screen and (min-width: 768px) {
+    padding: 19px 0 22px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .footer {
   padding-top: 60px;
