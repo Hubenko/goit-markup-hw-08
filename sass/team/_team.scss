@@ -38,7 +38,7 @@
   background-color: #ffffff;
   margin-bottom: 30px;
   // height: 622px;
-  max-width: 450px;
+  // max-width: 450px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -55,9 +55,9 @@
     // height: 428px;
   }
 }
-img {
-  max-width: 100%;
-}
+// img {
+//   max-width: 100%;
+// }
 .team__member {
   padding-top: 30px;
   padding-bottom: 24px;

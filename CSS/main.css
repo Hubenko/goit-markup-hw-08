@@ -793,7 +793,6 @@ ul {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   margin-bottom: 30px;
-  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -820,10 +819,6 @@ ul {
     width: calc((100% - 120px) / 4);
     margin: 15px;
   }
-}
-
-img {
-  max-width: 100%;
 }
 
 .team__member {
