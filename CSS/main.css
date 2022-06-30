@@ -489,7 +489,6 @@ ul {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -794,6 +793,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   margin-bottom: 30px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -820,6 +820,10 @@ ul {
     width: calc((100% - 120px) / 4);
     margin: 15px;
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 .team__member {
@@ -1073,6 +1077,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding: 0;
 }
 @media screen and (min-width: 1200px) {
   .contacts-networks {
@@ -1508,8 +1513,13 @@ ul {
 }
 
 .subscription {
-  padding: 0;
-  margin: 0;
+  padding: 0 15px 0;
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    padding: 0 159px 0;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription {
@@ -1528,6 +1538,7 @@ ul {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding: 0;
   }
 }
 
@@ -1570,7 +1581,7 @@ ul {
 }
 
 .subscription-mail input {
-  width: 358px;
+  min-width: 100%;
   height: 50px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1586,6 +1597,7 @@ ul {
     margin: 0;
     padding: 0;
     padding-left: 16px;
+    width: 358px;
   }
 }
 
