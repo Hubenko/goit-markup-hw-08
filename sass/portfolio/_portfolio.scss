@@ -108,18 +108,14 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card__list {
-  //   display: flex;
+  display: flex;
   flex-wrap: wrap;
   margin: 0;
   // padding-left: 15px;
   // padding-right: 15px;
   padding: 0;
   @media screen and (min-width: 768px) {
-    display: flex;
     margin: -15px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 }
 .card__type {
@@ -130,6 +126,8 @@
     display: flex;
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
+  }
+  @media screen {
   }
 }
 .card__box {
@@ -168,12 +166,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card__type:nth-child(3n) {
-  margin-right: 0;
-}
-.card__type:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
+// .card__type:nth-child(3n) {
+//   margin-right: 0;
+// }
+// .card__type:nth-last-child(-n + 3) {
+//   margin-bottom: 0;
+// }
 
 .list-network {
   display: flex;
