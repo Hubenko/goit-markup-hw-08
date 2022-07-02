@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <titel>Document</titel>
     <link rel="stylesheet" href="./CSS/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -129,20 +128,18 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/team1-1x.jpg 1x, ./images/team1-2x.jpg 2x"
+                  srcset="./images/team1-1x-desc.jpg 1x, ./images/team1-2x-desc.jpg 2x"
+                  type="image/jpeg"
                   media="(min-width:1200px)" />
                 <source
                   srcset="./images/team1-1x-tab.jpg 1x, ./images/team1-2x-tab.jpg 2x"
+                  type="image/jpeg"
                   media="(min-width:768px)" />
                 <source
                   srcset="./images/team1-1x-mob.jpg 1x, ./images/team1-2x-mob.jpg 2x"
+                  type="image/jpeg"
                   media="(min-width:320px)" />
-                <img
-                  src="./images/team1-1x-mob.jpg"
-                  alt="Игорь Демьяненко"
-                  width="450px"
-                  height="460px"
-                  class="team__photo"
+                <img src="./images/team1-1x-mob.jpg" alt="Игорь Демьяненко" class="team__photo"
               /></picture>
               <div class="team__member">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -181,10 +178,19 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/team1-1x.jpg" media="(min-width:1200px)" />
-                <source srcset="./images/team1-1x-tab.jpg" media="(min-width:768px)" />
-                <source srcset="./images/team1-1x-mob.jpg" media="(min-width:320px)" />
-                <img src="./images/team1-1x-mob.jpg" alt="Игорь Демьяненко" class="team__photo"
+                <source
+                  srcset="./images/team2-1x-desc.jpg 1x, ./images/team2-2x-desc.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="./images/team2-1x-tab.jpg 1x, ./images/team2-2x-tab.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="./images/team2-1x-mob.jpg 1x, ./images/team2-2x-mob.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:320px)" />
+                <img src="./images/team2-1x-mob.jpg" alt="Ольга Репина" class="team__photo"
               /></picture>
               <div class="team__member">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -223,10 +229,19 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/team1-1x.jpg" media="(min-width:1200px)" />
-                <source srcset="./images/team1-1x-tab.jpg" media="(min-width:768px)" />
-                <source srcset="./images/team1-1x-mob.jpg" media="(min-width:320px)" />
-                <img src="./images/team1-1x-mob.jpg" alt="Игорь Демьяненко" class="team__photo"
+                <source
+                  srcset="./images/team3-1x-desc.jpg 1x, ./images/team3-2x-desc.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="./images/team3-1x-tab.jpg 1x, ./images/team3-2x-tab.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="./images/team3-1x-mob.jpg 1x, ./images/team3-2x-mob.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:320px)" />
+                <img src="./images/team3-1x-mob.jpg" alt="Николай Тарасов" class="team__photo"
               /></picture>
               <div class="team__member">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -265,10 +280,19 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/team1-1x.jpg" media="(min-width:1200px)" />
-                <source srcset="./images/team1-1x-tab.jpg" media="(min-width:768px)" />
-                <source srcset="./images/team1-1x-mob.jpg" media="(min-width:320px)" />
-                <img src="./images/team1-1x-mob.jpg" alt="Игорь Демьяненко" class="team__photo"
+                <source
+                  srcset="./images/team4-1x-desc.jpg 1x, ./images/team4-2x-desc.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="./images/team4-1x-tab.jpg 1x, ./images/team4-2x-tab.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="./images/team4-1x-mob.jpg 1x, ./images/team4-2x-mob.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width:320px)" />
+                <img src="./images/team4-1x-mob.jpg" alt="Михаил Ермаков" class="team__photo"
               /></picture>
               <div class="team__member">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -492,21 +516,25 @@
       </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu menu-toggle-margin">
-        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-          <use class="icon-menu" href="./images/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div class="">
-        <ul class="menu__nav">
-          <li class="menu__item">
-            <a href="./index.html" class="site-nav__link current">Студия</a>
-          </li>
-          <li class="menu__item">
-            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-          </li>
-          <li class="menu__item"><a href="" class="site-nav__link">Контакты</a></li>
-        </ul>
+      <div class="menu">
+        <button type="button" class="menu-toggle js-close-menu menu-toggle-margin">
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="menu__nav__container">
+          <ul class="menu__nav">
+            <li class="menu__item">
+              <a href="./index.html" class="site-nav__link current">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="menu__item"><a href="" class="site-nav__link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu__contacts__container">
         <ul class="menu__contacts">
           <li class="menu-contacts__item">
             <a href="tel:+380961111111" class="tel__link"> +38 096 111 11 11</a>
@@ -515,13 +543,21 @@
             <a href="mailto:info@dewstudio.com" class="mail__link"> info@dewstudio.com</a>
           </li>
         </ul>
+      </div>
+      <div class="menu__networks__container">
         <ul class="menu__networks">
           <li class="menu__networks__item">
             <a href="" class="menu__networks__link">Instagram</a>
           </li>
-          <li class="menu__networks__item"><a href="" class="menu__networks__link">Twitter</a></li>
-          <li class="menu__networks__item"><a href="" class="menu__networks__link">Facebook</a></li>
-          <li class="menu__networks__item"><a href="" class="menu__networks__link">Linkedin</a></li>
+          <li class="menu__networks__item">
+            <a href="" class="menu__networks__link">Twitter</a>
+          </li>
+          <li class="menu__networks__item">
+            <a href="" class="menu__networks__link">Facebook</a>
+          </li>
+          <li class="menu__networks__item">
+            <a href="" class="menu__networks__link">Linkedin</a>
+          </li>
         </ul>
       </div>
     </div>
