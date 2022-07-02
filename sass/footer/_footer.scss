@@ -51,13 +51,12 @@
 }
 .contacts-networks__tablet {
   text-align: center;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
-    padding-left: 76px;
-    padding-right: 89px;
     margin-bottom: 60px;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     padding: 0;
@@ -102,7 +101,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin: 0;
     padding: 0;

@@ -90,7 +90,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   transition: transform 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: white;
@@ -100,7 +100,7 @@
   }
 }
 .menu-container.is-open {
-  transform: translateY(0);
+  transform: translateX(0);
   transition: transform 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
